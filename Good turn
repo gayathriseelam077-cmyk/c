@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int T, X, Y;
+    scanf("%d", &T);
+
+    // Iterate through each test case
+    while (T--) {
+        // Read the values of X and Y for the current test case
+        scanf("%d", &X);
+        scanf("%d", &Y);
+
+        // Check if the sum of X and Y is greater than 6
+        if (X + Y > 6) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
