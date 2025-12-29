@@ -1,0 +1,9 @@
+from itertools import groupby
+
+s = input().strip()
+
+result = []
+for key, group in groupby(s):
+    result.append(f"({len(list(group))}, {key})")
+
+print(" ".join(result))
